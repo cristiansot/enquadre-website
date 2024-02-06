@@ -5,6 +5,7 @@ import servicios from '../assets/img/service.jpg'
 import nosotros from '../assets/img/nosotros.jpg'
 import clientes from '../assets/img/clientes.jpg'
 import contacto from '../assets/img/contacto.jpg'
+import logo from '../assets/img/logotipo.png'
 
 const Code = () => {
   useEffect(() => {
@@ -102,10 +103,12 @@ const Code = () => {
     gotoSection(0, 1);
   }, []);
 
+  
   return (
     <div className="app-container">
       <header className="header">
         <nav>
+          <img className='logo' src={logo} />
           <a href="#first">Inicio </a>
           <a href="#second">Servicios </a>
           <a href="#third">Nosotros </a>
@@ -130,8 +133,12 @@ const Code = () => {
         id="third"
         title="Nosotros"
         className="third"
-        bgUrl={nosotros} 
-      />
+        bgUrl={nosotros}
+      >
+        <p className='texto'>
+          "Creamos productos de calidad, de forma rápida y simple. Nuestra inspiración es ayudar a nuestros clientes a comunicar de manera eficiente, moderna, más amigable, cercana y apuntando hacia la sustentabilidad corporativa. Nos avala una amplia trayectoria en el rubro junto a un equipo humano que mezcla la experiencia y la innovación. Nuestra propuesta precio-calidad es de excelencia, equilibrada y adaptable."
+        </p>
+      </Section>
       <Section
         id="fourth"
         title="Clientes"
@@ -148,13 +155,14 @@ const Code = () => {
   );
 };
 
-const Section = ({ id, title, className, bgUrl }) => {
+const Section = ({ id, title, className, bgUrl, children }) => {
   return (
     <section id={id} className={`section ${className}`}>
       <div className="wrapper-outer">
         <div className="wrapper-inner">
           <div className="background" style={{ backgroundImage: `url(${bgUrl})` }}>
             <h2 className="section-title">{title}</h2>
+            {children} {/* This will render the content passed as children */}
           </div>
         </div>
       </div>
