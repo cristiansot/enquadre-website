@@ -6,6 +6,8 @@ import nosotros from '../assets/img/nosotros.jpg'
 import clientes from '../assets/img/clientes.jpg'
 import contacto from '../assets/img/contacto.jpg'
 import logo from '../assets/img/logotipo.png'
+import { SocialIcon } from 'react-social-icons'
+import { Button } from '../components/Button';
 
 const Code = () => {
   useEffect(() => {
@@ -103,7 +105,6 @@ const Code = () => {
     gotoSection(0, 1);
   }, []);
 
-  
   return (
     <div className="app-container">
       <header className="header">
@@ -114,21 +115,27 @@ const Code = () => {
           <a href="#third">Nosotros </a>
           <a href="#fourth">Clientes </a>
           <a href="#fifth">Contacto</a>
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.linkedin.com/in/marcelo-gonz%C3%A1lez-l%C3%B3pez-009630105/" />
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.instagram.com/enquadre.cl/" />
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.youtube.com/@marcelo-Enquadre" />
         </nav>
       </header>
 
       <Section
         id="first"
-        title="Ver Reel"
         className="first"
         bgUrl={home}
-      />
+      >
+        <Button />
+      </Section>
+
       <Section
         id="second"
         title="Servicios"
         className="second"
         bgUrl={servicios}      
       />
+
       <Section
         id="third"
         title="Nosotros"
@@ -139,6 +146,7 @@ const Code = () => {
           "Creamos productos de calidad, de forma rápida y simple. Nuestra inspiración es ayudar a nuestros clientes a comunicar de manera eficiente, moderna, más amigable, cercana y apuntando hacia la sustentabilidad corporativa. Nos avala una amplia trayectoria en el rubro junto a un equipo humano que mezcla la experiencia y la innovación. Nuestra propuesta precio-calidad es de excelencia, equilibrada y adaptable."
         </p>
       </Section>
+      
       <Section
         id="fourth"
         title="Clientes"

@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px rgb(99, 207, 244) dashed;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
@@ -41,6 +41,19 @@ body {
 .logo {
   width: 250px;
   margin: -8px 20px 0 0;
+}
+
+.socialIcon {
+  width: 40px !important;
+  height: 40px !important;
+  margin-bottom: 5px;
+}
+
+button {
+  position: absolute;  
+  background-color: transparent;
+  border: none;
+  margin-left: -900px;
 }
 
 h2 {
