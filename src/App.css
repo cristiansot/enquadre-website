@@ -87,6 +87,10 @@ header {
   letter-spacing: 0.5em;
 }
 
+Slider{ 
+  display: flex;
+  position: absolute;
+}
 .texto {
   font-weight: 400;
   color: rgb(219, 219, 219);

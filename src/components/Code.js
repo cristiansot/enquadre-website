@@ -1,13 +1,43 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import home from '../assets/img/home.jpg'
-import servicios from '../assets/img/service.jpg'
-import nosotros from '../assets/img/nosotros.jpg'
-import clientes from '../assets/img/clientes.jpg'
-import contacto from '../assets/img/contacto.jpg'
-import logo from '../assets/img/logotipo.png'
-import { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons';
 import { Button } from '../components/Button';
+import Slider from '../components/Slider'; // Correct the import path
+import '../assets/css/slider.css';
+
+import home from '../assets/img/home.jpg';
+import servicios from '../assets/img/service.jpg';
+import nosotros from '../assets/img/nosotros.jpg';
+import clientes from '../assets/img/clientes.jpg';
+import contacto from '../assets/img/contacto.jpg';
+import logo from '../assets/img/logotipo.png';
+
+const slides = [
+  {
+    city: 'Paris',
+    country: 'France',
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
+  },
+  {
+    city: 'Singapore',
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
+  },
+  {
+    city: 'Prague',
+    country: 'Czech Republic',
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
+  },
+  {
+    city: 'Amsterdam',
+    country: 'Netherlands',
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg',
+  },
+  {
+    city: 'Moscow',
+    country: 'Russia',
+    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg',
+  },
+];
 
 const Code = () => {
   useEffect(() => {
@@ -109,7 +139,7 @@ const Code = () => {
     <div className="app-container">
       <header className="header">
         <nav>
-          <img className='logo' src={logo} />
+          <img className='logo' src={logo} alt="logo" />
           <a href="#first">Inicio </a>
           <a href="#second">Servicios </a>
           <a href="#third">Nosotros </a>
@@ -133,9 +163,11 @@ const Code = () => {
         id="second"
         title="Servicios"
         className="second"
-        bgUrl={servicios}      
+        bgUrl={servicios}   
       />
-
+  
+      <Slider className='slides' slides={slides} />
+      
       <Section
         id="third"
         title="Nosotros"
