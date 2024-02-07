@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import classNames from 'classnames';
-import ReactDOM from 'react-dom'; // Import ReactDOM
 
-const Slider = ({ slides }) => { // Define props as an argument
-  const [activeSlide, setActiveSlide] = useState(-1); // Use useState to define state
-  const [prevSlide, setPrevSlide] = useState(-1); // Use useState to define state
-  const [sliderReady, setSliderReady] = useState(false); // Use useState to define state
+const Slider = ({ slides }) => { 
+  const [activeSlide, setActiveSlide] = useState(-1); 
+  const [prevSlide, setPrevSlide] = useState(-1); 
+  const [sliderReady, setSliderReady] = useState(false); 
   
-  useEffect(() => { // Use useEffect for side effects
+  useEffect(() => { 
     // mounted
     if (slides) {
-        runAutochangeTO();
+        // runAutochangeTO();
         setTimeout(() => {
           setActiveSlide(0)
           setSliderReady(true)
@@ -23,12 +22,12 @@ const Slider = ({ slides }) => { // Define props as an argument
   
   let changeTO = null; // Define changeTO variable
   
-  const runAutochangeTO = () => {
-    changeTO = setTimeout(() => {
-      changeSlides(1);
-      runAutochangeTO();
-    }, AUTOCHANGE_TIME);
-  }
+  // const runAutochangeTO = () => {
+  //   changeTO = setTimeout(() => {
+  //     changeSlides(1);
+  //     runAutochangeTO();
+  //   }, AUTOCHANGE_TIME);
+  // }
   
   const changeSlides = (change) => {
     window.clearTimeout(changeTO);
@@ -48,12 +47,12 @@ const Slider = ({ slides }) => { // Define props as an argument
           {slides.map((slide, index) => (
             <div
               className={classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index  })}
-              key={slide.city}
+              key={slide.servicios}
               >
               <div className="slider__slide-content">
-                <h3 className="slider__slide-subheading">{slide.country || slide.city}</h3>
+                {/* <h3 className="slider__slide-subheading">{slide.country || slide.servicios}</h3> */}
                 <h2 className="slider__slide-heading">
-                  {slide.city.split('').map(l => <span>{l}</span>)}
+                  {slide.servicios.split('').map(l => <span>{l}</span>)}
                 </h2>
               </div>
               <div className="slider__slide-parts">

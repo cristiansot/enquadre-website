@@ -2,40 +2,59 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
 import { Button } from '../components/Button';
-import Slider from '../components/Slider'; // Correct the import path
+import Slider from '../components/Slider'; 
 import '../assets/css/slider.css';
-
 import home from '../assets/img/home.jpg';
-import servicios from '../assets/img/service.jpg';
 import nosotros from '../assets/img/nosotros.jpg';
 import clientes from '../assets/img/clientes.jpg';
 import contacto from '../assets/img/contacto.jpg';
 import logo from '../assets/img/logotipo.png';
+import spot from '../assets/img/spot_pulicitario.jpg'
+import comunicacion from '../assets/img/comunicacion_interna.jpg'
+import corporativo from '../assets/img/corporativo.jpg'
+import automotriz from '../assets/img/automotriz.jpg'
+import industrial from '../assets/img/industrial.jpg'
+import motion from '../assets/img/motion_graphics.jpg'
+import fotografia from '../assets/img/fotografia.jpg'
+import streaming from '../assets/img/eventos_streaming.jpg'
+import service from '../assets/img/service.jpg'
 
 const slides = [
   {
-    city: 'Paris',
-    country: 'France',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
+    servicios: 'SERVICE',
+    img: service,
   },
   {
-    city: 'Singapore',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
+    servicios: 'STREAMING',
+    img: streaming,
   },
   {
-    city: 'Prague',
-    country: 'Czech Republic',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
+    servicios: 'PRODUCCIÓN-FOTOGRÁFICA',
+    img: fotografia,
   },
   {
-    city: 'Amsterdam',
-    country: 'Netherlands',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg',
+    servicios: 'MOTION-GRAPHICS',
+    img: motion,
   },
   {
-    city: 'Moscow',
-    country: 'Russia',
-    img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg',
+    servicios: 'INDUSTRIAL',
+    img: industrial,
+  },
+  {
+    servicios: 'AUTOMOTRIZ',
+    img: automotriz,
+  },
+  {
+    servicios: 'COMUNICACIÓN-INTERNA',
+    img: comunicacion,
+  },
+  {
+    servicios: 'SPOT-PUBLICITARIO',
+    img: spot,
+  },
+  {
+    servicios: 'CORPORATIVO',
+    img: corporativo,
   },
 ];
 
@@ -162,11 +181,10 @@ const Code = () => {
       <Section
         id="second"
         title="Servicios"
-        className="second"
-        bgUrl={servicios}   
-      />
-  
-      <Slider className='slides' slides={slides} />
+        className="second"  
+      >
+        <Slider className='slides' slides={slides} /> 
+      </Section>
       
       <Section
         id="third"
@@ -199,10 +217,11 @@ const Section = ({ id, title, className, bgUrl, children }) => {
   return (
     <section id={id} className={`section ${className}`}>
       <div className="wrapper-outer">
+      {children} 
         <div className="wrapper-inner">
           <div className="background" style={{ backgroundImage: `url(${bgUrl})` }}>
             <h2 className="section-title">{title}</h2>
-            {children} {/* This will render the content passed as children */}
+            {children}
           </div>
         </div>
       </div>

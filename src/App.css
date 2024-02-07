@@ -28,6 +28,11 @@ nav {
   align-items: center;
 }
 
+.slides {
+  position: absolute;
+  z-index: 100;
+}
+
 body {
   margin: 0;
   padding: 0;
