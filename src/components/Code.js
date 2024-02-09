@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
 import { Button } from '../components/Button';
 import Slider from '../components/Slider'; 
+import Form from '../components/Form';
 import '../assets/css/slider.css';
 import home from '../assets/img/home.jpg';
 import nosotros from '../assets/img/nosotros.jpg';
@@ -21,40 +22,40 @@ import service from '../assets/img/service.jpg'
 
 const slides = [
   {
-    servicios: 'SERVICE',
-    img: service,
-  },
-  {
-    servicios: 'STREAMING',
-    img: streaming,
-  },
-  {
-    servicios: 'PRODUCCIÓN-FOTOGRÁFICA',
-    img: fotografia,
-  },
-  {
-    servicios: 'MOTION-GRAPHICS',
-    img: motion,
-  },
-  {
-    servicios: 'INDUSTRIAL',
-    img: industrial,
-  },
-  {
-    servicios: 'AUTOMOTRIZ',
-    img: automotriz,
-  },
-  {
-    servicios: 'COMUNICACIÓN-INTERNA',
-    img: comunicacion,
+    servicios: 'CORPORATIVO',
+    img: corporativo,
   },
   {
     servicios: 'SPOT-PUBLICITARIO',
     img: spot,
   },
   {
-    servicios: 'CORPORATIVO',
-    img: corporativo,
+    servicios: 'COMUNICACIÓN-INTERNA',
+    img: comunicacion,
+  },
+  {
+    servicios: 'AUTOMOTRIZ',
+    img: automotriz,
+  },
+  {
+    servicios: 'INDUSTRIAL',
+    img: industrial,
+  },
+  {
+    servicios: 'PRODUCCIÓN-FOTOGRÁFICA',
+    img: fotografia,
+  },
+  {
+    servicios: 'STREAMING',
+    img: streaming,
+  },
+  {
+    servicios: 'MOTION-GRAPHICS',
+    img: motion,
+  },
+  {
+    servicios: 'SERVICE',
+    img: service,
   },
 ];
 
@@ -180,7 +181,6 @@ const Code = () => {
 
       <Section
         id="second"
-        title="Servicios"
         className="second"  
       >
         <Slider className='slides' slides={slides} /> 
@@ -197,18 +197,27 @@ const Code = () => {
         </p>
       </Section>
       
-      <Section
+      <Section 
         id="fourth"
         title="Clientes"
         className="fourth"
         bgUrl={clientes} 
       />
+
       <Section
         id="fifth"
         title="Contacto"
         className="fifth"
         bgUrl={contacto} 
-      />
+      >
+         <h3 className='email'>
+          e-mail: marcelo@enquadre.cl
+        </h3>
+        <h3 className='movil'>
+          Móvil: +56 9 9359 5606 (whatsapp)
+        </h3>
+        <Form className='form'/>
+      </Section>
     </div>
   );
 };
@@ -217,9 +226,10 @@ const Section = ({ id, title, className, bgUrl, children }) => {
   return (
     <section id={id} className={`section ${className}`}>
       <div className="wrapper-outer">
-      {children} 
         <div className="wrapper-inner">
+         {children}
           <div className="background" style={{ backgroundImage: `url(${bgUrl})` }}>
+          
             <h2 className="section-title">{title}</h2>
             {children}
           </div>

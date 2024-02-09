@@ -9,6 +9,7 @@
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.50.1",
     "react-scripts": "5.0.1",
     "react-share": "^5.0.3",
     "react-social-icons": "^6.10.0",
