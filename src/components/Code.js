@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
-import { Button } from '../components/Button';
+import Button from '../components/Button'; // Import the Button component without curly braces
 import Slider from '../components/Slider'; 
 import Form from '../components/Form';
+
 import '../assets/css/slider.css';
 import home from '../assets/img/home.jpg';
 import nosotros from '../assets/img/nosotros.jpg';
@@ -42,7 +43,7 @@ const slides = [
     img: industrial,
   },
   {
-    servicios: 'PRODUCCIÓN-FOTOGRÁFICA',
+    servicios: 'FOTOGRAFÍA',
     img: fotografia,
   },
   {

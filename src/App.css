@@ -2,22 +2,29 @@
   outline: 1px rgb(99, 207, 244) dashed;
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 * {
   box-sizing: border-box;
   user-select: none;
 }
 
 a {
-  color: #fff;
+  color: #eaeaea;
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-family: "Montserrat";
   transition: color 0.3s, text-shadow 0.3s;
 }
 
 a:hover {
   text-shadow: 0 0 5px currentColor;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #FFF;
 }
 
 nav {
@@ -63,8 +70,8 @@ button {
 
 h2 {
   font-size: clamp(1rem, 5vw, 5rem);
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-family: "Montserrat";
+  font-weight: 500;
   text-align: center;
   letter-spacing: 0.5em;
   margin-right: -0.5em;
@@ -87,7 +94,7 @@ header {
   width: 100%;
   z-index: 3;
   height: 7em;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat";
   font-size: clamp(0.66rem, 2vw, 1rem);
   letter-spacing: 0.5em;
 }
@@ -144,23 +151,28 @@ form {
   display: flex;
   flex-direction: column;
   width: 400px;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   margin-top: 400px;
+  color: #fff;
 }
 
 form input {
   width: 400px;
-  height: 35px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.357);
   border: none;
+  font-family: "Montserrat";
+  color: #fff;
 }
 
 form textarea {
   width: 400px;
   height: 80px;
+  font-family: "Montserrat";
   background-color: rgba(0, 0, 0, 0.357);
   border: none;
+  color: #fff;
 }
 
 h2 * {
@@ -173,14 +185,15 @@ h3 {
   align-items: center;
   margin-bottom: 200px;
   flex-direction: column;
-  font-family: Nunito+Sans;
-  font-weight: 300;
+  font-family: "Montserrat";
+  font-weight: 500;
   font-size: 24px;
   width: 500px;
-  color: rgb(179, 179, 179);
+  color: rgb(227, 227, 227);
 }
 
 .movil {
   margin-top: -60px;
-  font-size: 28px;
+  font-size: 26px;
+  font-family: "Montserrat";
 }

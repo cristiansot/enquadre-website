@@ -264,14 +264,21 @@
 .slider__slide.s--active .slider__slide-part-inner:before {
   opacity: 1;
 }
+
+.contentSliderControl {
+  display: flex;
+  justify-content: space-around;
+}
+
 .slider__control {
   z-index: 100;
   position: absolute;
-  left: 50px;
+  margin-top: 100px;
+  display: flex;
+  margin-right: 90px;
   top: 50%;
   width: 50px;
   height: 50px;
-  margin-top: 8px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
   transform: translateX(-50px);
@@ -294,8 +301,8 @@
   transform: translateX(5px) rotate(-45deg);
 }
 .slider__control--right {
-  left: auto;
-  right: 50px;
+  display: flex;
+  margin-left: 200px;
   transform: translateX(50px);
 }
 .slider__control--right:before {
