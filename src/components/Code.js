@@ -61,6 +61,18 @@ const slides = [
   },
 ];
 
+function linkedIn() {
+  window.open("https://www.linkedin.com/in/marcelo-gonz%C3%A1lez-l%C3%B3pez-009630105/", "_blank");
+}
+
+function instagram() {
+  window.open("https://www.instagram.com/enquadre.cl/", "_blank");
+}
+
+function youtube() {
+  window.open("https://www.youtube.com/@marcelo-Enquadre", "_blank");
+}
+
 const Code = () => {
   useEffect(() => {
     let sections = document.querySelectorAll('.section'),
@@ -167,9 +179,9 @@ const Code = () => {
           <a href="#third">Nosotros </a>
           <a href="#fourth">Clientes </a>
           <a href="#fifth">Contacto</a>
-          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.linkedin.com/in/marcelo-gonz%C3%A1lez-l%C3%B3pez-009630105/" />
-          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.instagram.com/enquadre.cl/" />
-          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.youtube.com/@marcelo-Enquadre" />
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={linkedIn} url="https://www.linkedin.com" />
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={instagram} url="https://www.instagram.com/" />
+          <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={youtube} url="https://www.youtube.com/" />
         </nav>
       </header>
 
