@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/enquadre-website/static/css/main.79c9edbf.css",
-    "main.js": "/enquadre-website/static/js/main.78918344.js",
+    "main.css": "/enquadre-website/static/css/main.6c0064b0.css",
+    "main.js": "/enquadre-website/static/js/main.0dafa7e9.js",
     "static/js/592.67ef65e9.chunk.js": "/enquadre-website/static/js/592.67ef65e9.chunk.js",
     "static/media/fotografia.jpg": "/enquadre-website/static/media/fotografia.dc26dd94c56376964a2a.jpg",
     "static/media/industrial.jpg": "/enquadre-website/static/media/industrial.8abe3a8e62e825b410a0.jpg",
@@ -18,12 +18,12 @@
     "static/media/clientes.jpg": "/enquadre-website/static/media/clientes.36b58de932ff1465c83d.jpg",
     "static/media/logotipo.png": "/enquadre-website/static/media/logotipo.9634015f468c93e216b2.png",
     "index.html": "/enquadre-website/index.html",
-    "main.79c9edbf.css.map": "/enquadre-website/static/css/main.79c9edbf.css.map",
-    "main.78918344.js.map": "/enquadre-website/static/js/main.78918344.js.map",
+    "main.6c0064b0.css.map": "/enquadre-website/static/css/main.6c0064b0.css.map",
+    "main.0dafa7e9.js.map": "/enquadre-website/static/js/main.0dafa7e9.js.map",
     "592.67ef65e9.chunk.js.map": "/enquadre-website/static/js/592.67ef65e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79c9edbf.css",
-    "static/js/main.78918344.js"
+    "static/css/main.6c0064b0.css",
+    "static/js/main.0dafa7e9.js"
   ]
 }
