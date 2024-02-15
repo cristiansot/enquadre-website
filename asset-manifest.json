@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/enquadre-website/static/css/main.79c9edbf.css",
-    "main.js": "/enquadre-website/static/js/main.f92211a9.js",
+    "main.js": "/enquadre-website/static/js/main.78918344.js",
     "static/js/592.67ef65e9.chunk.js": "/enquadre-website/static/js/592.67ef65e9.chunk.js",
     "static/media/fotografia.jpg": "/enquadre-website/static/media/fotografia.dc26dd94c56376964a2a.jpg",
     "static/media/industrial.jpg": "/enquadre-website/static/media/industrial.8abe3a8e62e825b410a0.jpg",
@@ -19,11 +19,11 @@
     "static/media/logotipo.png": "/enquadre-website/static/media/logotipo.9634015f468c93e216b2.png",
     "index.html": "/enquadre-website/index.html",
     "main.79c9edbf.css.map": "/enquadre-website/static/css/main.79c9edbf.css.map",
-    "main.f92211a9.js.map": "/enquadre-website/static/js/main.f92211a9.js.map",
+    "main.78918344.js.map": "/enquadre-website/static/js/main.78918344.js.map",
     "592.67ef65e9.chunk.js.map": "/enquadre-website/static/js/592.67ef65e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79c9edbf.css",
-    "static/js/main.f92211a9.js"
+    "static/js/main.78918344.js"
   ]
 }
