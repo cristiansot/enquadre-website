@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
-import Button from '../components/Button'; // Import the Button component without curly braces
+import Button from '../components/Button';
 import Slider from '../components/Slider'; 
 import Form from '../components/Form';
+import Whatsapp from '../components/Whatsapp'
 
 import '../assets/css/slider.css';
 import home from '../assets/img/home.jpg';
@@ -217,8 +218,9 @@ const Code = () => {
         <h3 className='movil'>
           Móvil: +56 9 9359 5606 (whatsapp)
         </h3>
-        <Form className='form'/>
+        <Form className='form'/> 
       </Section>
+      <Whatsapp />
     </div>
   );
 };
