@@ -208,7 +208,16 @@ h3 {
 }
 
 @media screen and (max-width: 650px) {
-  .header nav{
+  .header nav a{
+    display: none;
+  }
+
+  .header nav .logo{
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .header nav .social-container{ 
     display: none;
   }
 
@@ -219,18 +228,17 @@ h3 {
   #slides {
     display: none;
   }
-  .toggle{
-    position: relative;
-    z-index: 999 !important;
-  }
+  
 
-  .homeMobile {
+  /* .homeMobile {
     display: flex;
     width: 106%;
-  }
+  } */
 
   #whatsapp{
     display: flex;
     margin-bottom: -100px !important;
   }
+
+
 }
