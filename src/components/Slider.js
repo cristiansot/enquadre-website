@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import classNames from 'classnames';
+import ('../assets/css/slider.css')
 
 const Slider = ({ slides }) => { 
   const [activeSlide, setActiveSlide] = useState(-1); 
@@ -22,13 +23,6 @@ const Slider = ({ slides }) => {
   
   let changeTO = null; // Define changeTO variable
   
-  // const runAutochangeTO = () => {
-  //   changeTO = setTimeout(() => {
-  //     changeSlides(1);
-  //     runAutochangeTO();
-  //   }, AUTOCHANGE_TIME);
-  // }
-  
   const changeSlides = (change) => {
     window.clearTimeout(changeTO);
     const length = slides.length; // Use slides.length directly
@@ -50,10 +44,11 @@ const Slider = ({ slides }) => {
               key={slide.servicios}
               >
               <div className="slider__slide-content">
-                {/* <h3 className="slider__slide-subheading">{slide.country || slide.servicios}</h3> */}
-                <h2 className="slider__slide-heading">
+                <h3 className="slider__slide-subheading">{slide.country || slide.servicios}</h3>
+                
+                {/* <h2 className="slider__slide-heading">
                   {slide.servicios.split('').map(l => <span>{l}</span>)}
-                </h2>
+                </h2> */}
               </div>
               <div className="slider__slide-parts">
                 {[...Array(IMAGE_PARTS).fill()].map((x, i) => (
@@ -71,6 +66,7 @@ const Slider = ({ slides }) => {
           </div>
       </div>
     );
+    
 }
 
 const IMAGE_PARTS = 4;

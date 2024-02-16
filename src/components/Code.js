@@ -22,45 +22,17 @@ import motion from '../assets/img/motion_graphics.jpg'
 import fotografia from '../assets/img/fotografia.jpg'
 import streaming from '../assets/img/eventos_streaming.jpg'
 import service from '../assets/img/service.jpg'
-import homeMobile from '../assets/img/mobile/home_mobile.jpg'
 
 const slides = [
-  {
-    servicios: 'CORPORATIVO',
-    img: corporativo,
-  },
-  {
-    servicios: 'SPOT-PUBLICITARIO',
-    img: spot,
-  },
-  {
-    servicios: 'COMUNICACIÓN-INTERNA',
-    img: comunicacion,
-  },
-  {
-    servicios: 'AUTOMOTRIZ',
-    img: automotriz,
-  },
-  {
-    servicios: 'INDUSTRIAL',
-    img: industrial,
-  },
-  {
-    servicios: 'FOTOGRAFÍA',
-    img: fotografia,
-  },
-  {
-    servicios: 'STREAMING',
-    img: streaming,
-  },
-  {
-    servicios: 'MOTION-GRAPHICS',
-    img: motion,
-  },
-  {
-    servicios: 'SERVICE',
-    img: service,
-  },
+  { servicios: 'CORPORATIVO', img: corporativo },
+  { servicios: 'SPOT PUBLICITARIO', img: spot,},
+  { servicios: 'COMUNICACIÓN INTERNA', img: comunicacion, },
+  { servicios: 'AUTOMOTRIZ', img: automotriz, },
+  { servicios: 'INDUSTRIAL', img: industrial, },
+  { servicios: 'FOTOGRAFÍA', img: fotografia, },
+  { servicios: 'STREAMING', img: streaming, },
+  { servicios: 'MOTION GRAPHICS', img: motion, },
+  { servicios: 'SERVICE', img: service, },
 ];
 
 function linkedIn() {
@@ -195,7 +167,9 @@ const Code = () => {
         className="first"
         bgUrl={home}
       >
-      <img className='homeMobile' src={homeMobile} alt="Home Mobile" />        <Button />
+      {/* <img className='homeMobile' src={homeMobile} alt="Home Mobile" />         */}
+      
+      <Button />
       </Section>
 
       <Section

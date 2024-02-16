@@ -10,8 +10,9 @@
 }
 
 #overlay-button {
-  display: none !important;
+  display: none;
 }
+
 
 a {
   color: #eaeaea;
@@ -211,6 +212,13 @@ h3 {
     display: none;
   }
 
+  #overlay-button {
+    display: flex;
+  }
+  
+  #slides {
+    display: none;
+  }
   .toggle{
     position: relative;
     z-index: 999 !important;
