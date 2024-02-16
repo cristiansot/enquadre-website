@@ -1,38 +1,73 @@
-import React, { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
+import React, { useState, useEffect } from "react";
+import '../assets/css/lightbox.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; // Importing the solid circle and times icons
 import btnVer from '../assets/img/boton_ver_reel.png';
-import Video from "yet-another-react-lightbox/plugins/video";
 
-const Button = () => {
-  const [isOpen, setOpen] = useState(false);
+const VideoPlugin = () => {
+  const [open, setOpen] = useState(false); // State for controlling lightbox open/close
+  const [lightboxContent, setLightboxContent] = useState({ type: "", content: "" });
+
+  // Function to open the lightbox when the button is clicked
+  const handleClick = () => {
+    setOpen(true);
+    setLightboxContent({ type: "video", content: "https://www.enquadre.cl/videos/general.mp4" });
+  };
+
+  // Function to close the lightbox
+  const handleClose = () => {
+    setOpen(false);
+    setLightboxContent({ type: "", content: "" });
+  };
+
+  // Function to handle key press events
+  const handleKeyPress = (event) => {
+    if (event.key === 'Escape') {
+      handleClose();
+    }
+  };
+
+  // Add event listener for key press events when the component mounts
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress);
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  });
 
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)}>
-        <img className='verReel' src={btnVer} alt="Ver" /> 
+      {/* Button to open the lightbox */}
+      <button type="button" onClick={handleClick}>
+        <img className='verReel' src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} /> 
       </button>
 
-      {isOpen && (
-        <Lightbox
-          plugins={[Video]}
-          slides={[
-            {
-              type: "video",
-              width: 1280,
-              height: 720,
-              poster: "",
-              sources: [
-                {
-                  src: "https://www.enquadre.cl/videos/general.mp4",
-                  type: "video/mp4",
-                },
-              ],
-            }
-          ]}
-        />
+      {/* Lightbox component (rendered conditionally based on open state) */}
+      {open && (
+        <div className="lightbox">
+          <div className="lightbox-container">
+            {lightboxContent.type === "video" ? (
+              <div className="lightbox-video">
+                <video controls autoPlay> 
+                  <source src={lightboxContent.content} type="video/mp4" />
+                </video>
+                <div />
+                <a href="#lightbox" className="lightbox-toggle" onClick={handleClose}>
+                  {/* <FontAwesomeIcon icon={faTimes} />} */}
+                  <FontAwesomeIcon icon={faCircleXmark} />
+                </a>
+              </div>
+            ) : null}
+          </div>
+        </div>
       )}
     </>
   );
 }
 
-export default Button;
+export default VideoPlugin;
+
+
+
+
