@@ -22,6 +22,7 @@ import motion from '../assets/img/motion_graphics.jpg'
 import fotografia from '../assets/img/fotografia.jpg'
 import streaming from '../assets/img/eventos_streaming.jpg'
 import service from '../assets/img/service.jpg'
+import homeMobile from '../assets/img/mobile/home_mobile.jpg'
 
 const slides = [
   {
@@ -194,7 +195,7 @@ const Code = () => {
         className="first"
         bgUrl={home}
       >
-        <Button />
+      <img className='homeMobile' src={homeMobile} alt="Home Mobile" />        <Button />
       </Section>
 
       <Section

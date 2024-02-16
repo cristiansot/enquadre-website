@@ -9,6 +9,10 @@
   user-select: none;
 }
 
+#overlay-button {
+  display: none !important;
+}
+
 a {
   color: #eaeaea;
   text-decoration: none;
@@ -97,6 +101,10 @@ header {
   font-family: "Montserrat";
   font-size: clamp(0.66rem, 2vw, 1rem);
   letter-spacing: 0.5em;
+}
+
+.homeMobile {
+  display: none;
 }
 
 Slider{ 
@@ -202,20 +210,19 @@ h3 {
   .header nav{
     display: none;
   }
-  
+
   .toggle{
     position: relative;
     z-index: 999 !important;
   }
-  
-  /* section{
-    display: none;
-  } */
+
+  .homeMobile {
+    display: flex;
+    width: 106%;
+  }
 
   #whatsapp{
     display: flex;
     margin-bottom: -100px !important;
   }
-
-
 }
