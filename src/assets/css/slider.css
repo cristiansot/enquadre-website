@@ -28,6 +28,7 @@
   text-transform: uppercase;
   line-height: 1;
 }
+
 /* TEXT */
 .slider__slide-subheading {
   margin-bottom: 60px;
@@ -164,7 +165,7 @@
 .slider__control {
   z-index: 100;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 70px;
   display: flex;
   margin-right: 90px;
   top: 50%;
