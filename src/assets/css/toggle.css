@@ -6,6 +6,7 @@
   position: absolute;
   right: 2em;
   top: 1.5em;
+  animation: fadein 3s;
   padding: 40px 6px;
   z-index: 5;
   cursor: pointer;
@@ -43,6 +44,7 @@
 input[type=checkbox] {
   display: none;
   
+  
   &:checked ~ #overlay {
     visibility: visible;
   }
@@ -55,6 +57,7 @@ input[type=checkbox] {
       &:before {
         transform: rotate(45deg) translate(7px, 7px);
         opacity: 1;
+        
       }
       &:after {
         transform: rotate(-45deg) translate(7px, -7px);
@@ -63,11 +66,25 @@ input[type=checkbox] {
   }
 }
 
+@keyframes fadein {
+  0% {
+      opacity:0;
+  }
+  50%{
+      opacity:0.5;
+  }
+  100% {
+      opacity:1;
+  }
+}
+
 #overlay {
   height: 100vh;
   width: 100vw;
+  animation: fadein 4s;
   background: #210c13d6;
   z-index: 2;
+  
   visibility: hidden;
   position: fixed;
   &.active {

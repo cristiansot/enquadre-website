@@ -23,6 +23,8 @@ import fotografia from '../assets/img/fotografia.jpg'
 import streaming from '../assets/img/eventos_streaming.jpg'
 import service from '../assets/img/service.jpg'
 
+import homeMobile from '../assets/img/mobile/home_mobile.jpg'
+
 const slides = [
   { servicios: 'CORPORATIVO', img: corporativo },
   { servicios: 'SPOT PUBLICITARIO', img: spot,},
@@ -167,7 +169,7 @@ const Code = () => {
         className="first"
         bgUrl={home}
       >
-      {/* <img className='homeMobile' src={homeMobile} alt="Home Mobile" />         */}
+      <img className='homeMobile' src={homeMobile} alt="Home Mobile" />        
       
       <Button />
       </Section>

@@ -13,7 +13,6 @@
   display: none;
 }
 
-
 a {
   color: #eaeaea;
   text-decoration: none;
@@ -221,6 +220,12 @@ h3 {
     display: none;
   }
 
+  button {
+    margin-top: 350px;
+    margin-left: -100px;
+
+  }
+
   #overlay-button {
     display: flex;
   }
@@ -230,10 +235,10 @@ h3 {
   }
   
 
-  /* .homeMobile {
+  .homeMobile {
     display: flex;
     width: 106%;
-  } */
+  }
 
   #whatsapp{
     display: flex;
