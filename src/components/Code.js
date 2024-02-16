@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import Slider from '../components/Slider'; 
 import Form from '../components/Form';
 import Whatsapp from '../components/Whatsapp'
+import Toggle from './Toggle';
 
 import '../assets/css/slider.css';
 import home from '../assets/img/home.jpg';
@@ -185,6 +186,9 @@ const Code = () => {
         </nav>
       </header>
 
+      <Whatsapp />
+      <Toggle className="toggle" />
+
       <Section
         id="first"
         className="first"
@@ -232,7 +236,6 @@ const Code = () => {
         </h3>
         <Form className='form'/> 
       </Section>
-      <Whatsapp />
     </div>
   );
 };

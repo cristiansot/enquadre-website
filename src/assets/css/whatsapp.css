@@ -536,3 +536,12 @@
   margin-left: -60px;
   border-radius: 100%;
 }
+
+@media screen and (max-width: 650px) {
+  .phone-call {
+    display: flex;
+    margin-bottom: -100px !important;
+    margin-right: -20px !important;
+  }
+  
+}

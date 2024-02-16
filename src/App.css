@@ -197,3 +197,25 @@ h3 {
   font-size: 26px;
   font-family: "Montserrat";
 }
+
+@media screen and (max-width: 650px) {
+  .header nav{
+    display: none;
+  }
+  
+  .toggle{
+    position: relative;
+    z-index: 999 !important;
+  }
+  
+  /* section{
+    display: none;
+  } */
+
+  #whatsapp{
+    display: flex;
+    margin-bottom: -100px !important;
+  }
+
+
+}
