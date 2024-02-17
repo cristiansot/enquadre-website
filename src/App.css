@@ -226,6 +226,12 @@ h3 {
 
   }
 
+  h2{
+    font-size: 30px;
+    margin-top: 20px;
+
+  }
+
   #overlay-button {
     display: flex;
   }
@@ -233,12 +239,26 @@ h3 {
   #slides {
     display: none;
   }
-  
 
   .homeMobile {
     display: flex;
     width: 106%;
   }
+
+  .nosotrosMobile {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .texto{
+    line-height: 20px;
+    display: flex;
+    width: 300px;
+    font-size: 16px;
+  }
+
 
   #whatsapp{
     display: flex;

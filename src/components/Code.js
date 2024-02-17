@@ -24,6 +24,7 @@ import streaming from '../assets/img/eventos_streaming.jpg'
 import service from '../assets/img/service.jpg'
 
 import homeMobile from '../assets/img/mobile/home_mobile.jpg'
+import nosotrosMobile from '../assets/img/mobile/nosotros_mobile.jpg'
 
 const slides = [
   { servicios: 'CORPORATIVO', img: corporativo },
@@ -169,7 +170,7 @@ const Code = () => {
         className="first"
         bgUrl={home}
       >
-      <img className='homeMobile' src={homeMobile} alt="Home Mobile" />        
+      <img className='homeMobile' src={homeMobile} alt="Home" />        
       
       <Button />
       </Section>
@@ -187,9 +188,14 @@ const Code = () => {
         className="third"
         bgUrl={nosotros}
       >
+         <img className='nosotrosMobile' src={nosotrosMobile} alt="Nosotros" />    
+         
         <p className='texto'>
           "Creamos productos de calidad, de forma rápida y simple. Nuestra inspiración es ayudar a nuestros clientes a comunicar de manera eficiente, moderna, más amigable, cercana y apuntando hacia la sustentabilidad corporativa. Nos avala una amplia trayectoria en el rubro junto a un equipo humano que mezcla la experiencia y la innovación. Nuestra propuesta precio-calidad es de excelencia, equilibrada y adaptable."
         </p>
+
+           
+
       </Section>
       
       <Section 

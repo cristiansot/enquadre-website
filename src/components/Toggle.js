@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { TimelineMax, Power2, Power4 } from "gsap";
 import { SocialIcon } from 'react-social-icons';
 import "../assets/css/toggle.css";
 
