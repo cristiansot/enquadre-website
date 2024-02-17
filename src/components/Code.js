@@ -213,7 +213,7 @@ const Code = () => {
         className="fifth"
         bgUrl={contacto} 
       >
-         <h3 className='email'>
+        <h3 className='email'>
           e-mail: marcelo@enquadre.cl
         </h3>
         <h3 className='movil' href="tel:+56993595606" >
