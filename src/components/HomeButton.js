@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, startTransition } from "react";
 import '../assets/css/lightbox.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'; // Importing the solid circle and times icons
 import btnVer from '../assets/img/boton_ver_reel.png';
 
 const VideoPlugin = () => {
@@ -42,7 +40,7 @@ const VideoPlugin = () => {
       <button type="button" className='verReel' onClick={handleClick}>
         <img src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} /> 
       </button>
-
+  
       {/* Lightbox component (rendered conditionally based on open state) */}
       {open && (
         <div className="lightbox">
@@ -54,8 +52,6 @@ const VideoPlugin = () => {
                 </video>
                 <div />
                 <a href="#lightbox" className="lightbox-toggle" onClick={handleClose}>
-                  {/* <FontAwesomeIcon icon={faTimes} />} */}
-                  <FontAwesomeIcon icon={faCircleXmark} />
                 </a>
               </div>
             ) : null}
