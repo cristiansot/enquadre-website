@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
-import Button from '../components/Button';
 import Slider from '../components/Slider'; 
 import Form from '../components/Form';
 import Whatsapp from '../components/Whatsapp'
 import Toggle from './Toggle';
+import Buttons from '../components/Buttons'
+import HomeButton from '../components/HomeButton'
 
 import '../assets/css/slider.css';
 import home from '../assets/img/home.jpg';
@@ -25,6 +26,8 @@ import service from '../assets/img/service.jpg'
 
 import homeMobile from '../assets/img/mobile/home_mobile.jpg'
 import nosotrosMobile from '../assets/img/mobile/nosotros_mobile.jpg'
+import clientesMobile from '../assets/img/mobile/clientes_mobile.jpg'
+import contactoMobile from '../assets/img/mobile/contacto_mobile.jpg'
 
 const slides = [
   { servicios: 'CORPORATIVO', img: corporativo },
@@ -149,8 +152,8 @@ const Code = () => {
   return (
     <div className="app-container">
       <header className="header">
+      <img className='logo' src={logo} alt="logo" />
         <nav>
-          <img className='logo' src={logo} alt="logo" />
           <a href="#first">Inicio </a>
           <a href="#second">Servicios </a>
           <a href="#third">Nosotros </a>
@@ -172,7 +175,7 @@ const Code = () => {
       >
       <img className='homeMobile' src={homeMobile} alt="Home" />        
       
-      <Button />
+      <HomeButton className="homeButton"/>
       </Section>
 
       <Section
@@ -188,22 +191,21 @@ const Code = () => {
         className="third"
         bgUrl={nosotros}
       >
-         <img className='nosotrosMobile' src={nosotrosMobile} alt="Nosotros" />    
-         
+        <img className='nosotrosMobile' src={nosotrosMobile} alt="Nosotros" />    
         <p className='texto'>
           "Creamos productos de calidad, de forma rápida y simple. Nuestra inspiración es ayudar a nuestros clientes a comunicar de manera eficiente, moderna, más amigable, cercana y apuntando hacia la sustentabilidad corporativa. Nos avala una amplia trayectoria en el rubro junto a un equipo humano que mezcla la experiencia y la innovación. Nuestra propuesta precio-calidad es de excelencia, equilibrada y adaptable."
         </p>
-
-           
-
       </Section>
       
       <Section 
         id="fourth"
-        title="Clientes"
+        // title="Clientes"
         className="fourth"
         bgUrl={clientes} 
-      />
+      >
+        <Buttons />
+        <img className='clientesMobile' src={clientesMobile} alt="Clientes" />    
+      </Section>
 
       <Section
         id="fifth"
@@ -214,10 +216,11 @@ const Code = () => {
          <h3 className='email'>
           e-mail: marcelo@enquadre.cl
         </h3>
-        <h3 className='movil'>
-          Móvil: +56 9 9359 5606 (whatsapp)
+        <h3 className='movil' href="tel:+56993595606" >
+          Móvil: +56 9 9359 5606
         </h3>
         <Form className='form'/> 
+        <img className='contactoMobile' src={contactoMobile} alt="Contacto" />    
       </Section>
     </div>
   );

@@ -1,0 +1,57 @@
+form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+  align-items: center;
+  margin-top: 400px;
+  color: #fff;
+}
+
+form input {
+  width: 400px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.357);
+  border: none;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+form textarea {
+  width: 400px;
+  height: 80px;
+  font-family: "Montserrat";
+  background-color: rgba(0, 0, 0, 0.357);
+  border: none;
+  color: #fff;
+}
+
+.movil {
+  margin-top: -60px;
+  font-size: 26px;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 650px) {
+
+  form {
+   margin-bottom: 120px;
+  }
+
+  form input {
+    width: 320px;
+  }
+
+  form textarea {
+    width: 320px;
+  }
+
+  .movil{
+    margin-top: -80px;
+  }
+
+  .email{
+    margin-top: 0px;
+  }
+}

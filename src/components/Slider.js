@@ -16,9 +16,6 @@ const Slider = ({ slides }) => {
           setSliderReady(true)
         }, 0); 
     }
-    return () => {
-      window.clearTimeout(changeTO);
-    }
   }, [slides])
   
   let changeTO = null; // Define changeTO variable
@@ -70,6 +67,5 @@ const Slider = ({ slides }) => {
 }
 
 const IMAGE_PARTS = 4;
-const AUTOCHANGE_TIME = 4000;
 
 export default Slider;

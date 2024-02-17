@@ -13,6 +13,27 @@
   display: none;
 }
 
+.homeMobile {
+  display: none;
+}
+
+.contactoMobile {
+  display: none;
+}
+
+.clientesMobile {
+  display: none;
+}
+
+.nosotrosMobile {
+  display: none;
+}
+
+button{
+  background-color:  transparent;
+  border: transparent;
+}
+
 a {
   color: #eaeaea;
   text-decoration: none;
@@ -34,7 +55,7 @@ p {
 nav {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 58px;
   gap: 20px;
   align-items: center;
 }
@@ -56,7 +77,7 @@ body {
 
 .logo {
   width: 250px;
-  margin: -8px 20px 0 0;
+  margin: 45px 20px 0 0;
 }
 
 .socialIcon {
@@ -65,7 +86,8 @@ body {
   margin-bottom: -2px;
 }
 
-button {
+/* Boton Principal */
+.verReel {
   position: absolute;  
   background-color: transparent;
   border: none;
@@ -103,14 +125,11 @@ header {
   letter-spacing: 0.5em;
 }
 
-.homeMobile {
-  display: none;
-}
-
 Slider{ 
   display: flex;
   position: absolute;
 }
+
 .texto {
   font-size: 20px;
   font-weight: 300;
@@ -154,35 +173,6 @@ Slider{
   overflow: hidden;
 }
 
-form {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  gap: 10px;
-  align-items: center;
-  margin-top: 400px;
-  color: #fff;
-}
-
-form input {
-  width: 400px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.357);
-  border: none;
-  font-family: "Montserrat";
-  color: #fff;
-}
-
-form textarea {
-  width: 400px;
-  height: 80px;
-  font-family: "Montserrat";
-  background-color: rgba(0, 0, 0, 0.357);
-  border: none;
-  color: #fff;
-}
-
 h2 * {
   will-change: transform;
 }
@@ -200,20 +190,9 @@ h3 {
   color: rgb(227, 227, 227);
 }
 
-.movil {
-  margin-top: -60px;
-  font-size: 26px;
-  font-family: "Montserrat";
-}
-
 @media screen and (max-width: 650px) {
   .header nav a{
     display: none;
-  }
-
-  .header nav .logo{
-    margin-left: 10px;
-    margin-top: 20px;
   }
 
   .header nav .social-container{ 
@@ -228,8 +207,11 @@ h3 {
 
   h2{
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: -40px;
+  }
 
+  h3{
+    font-size: 20px;
   }
 
   #overlay-button {
@@ -257,13 +239,40 @@ h3 {
     display: flex;
     width: 300px;
     font-size: 16px;
+    margin-top: 340px;
   }
 
+  /* Clientes */
+  .clientesMobile {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 106%;
+    z-index: -1;
+  }
+  
+  .contactoMobile {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+    width: 103%;
+  }
 
   #whatsapp{
     display: flex;
     margin-bottom: -100px !important;
   }
+
+  header nav{
+    display: none;
+  }
+
+  .logo {
+    width: 250px;
+    margin: 45px 0 0 10px;
+  }
+
 
 
 }

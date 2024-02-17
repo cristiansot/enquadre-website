@@ -6,7 +6,6 @@
     height: 100%;
     justify-content: center;
     background: rgba(0, 0, 0, 0.575);
-    
   }
   
   .lightbox-container {
@@ -18,7 +17,6 @@
   .lightbox-video{
     display: flex;
     justify-content: center;
-    
   }
   
   .lightbox-video video{
@@ -34,5 +32,4 @@
     font-size: 40px;
   
     /* -webkit-margin-start: 550px; */
-    
   }

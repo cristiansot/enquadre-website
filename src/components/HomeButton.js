@@ -39,8 +39,8 @@ const VideoPlugin = () => {
   return (
     <>
       {/* Button to open the lightbox */}
-      <button type="button" onClick={handleClick}>
-        <img className='verReel' src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} /> 
+      <button type="button" className='verReel' onClick={handleClick}>
+        <img src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} /> 
       </button>
 
       {/* Lightbox component (rendered conditionally based on open state) */}
