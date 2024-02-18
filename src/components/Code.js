@@ -54,6 +54,8 @@ function youtube() {
   window.open("https://www.youtube.com/@marcelo-Enquadre", "_blank");
 }
 
+//Integrar promps para pasar la info desde toggle button
+
 const Code = () => {
   useEffect(() => {
     let sections = document.querySelectorAll('.section'),
@@ -168,6 +170,9 @@ const Code = () => {
 
       <Whatsapp />
       <Toggle className="toggle" />
+      //Implementar
+      {/* <Toggle navigateToSection={navigateSectionById} /> */}
+
 
       <Section
         id="first"

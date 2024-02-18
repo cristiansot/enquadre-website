@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
 import "../assets/css/toggle.css";
 
-const Toggle = () => {
+const Toggle = ({ navigateToSection }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
   function linkedIn() {
     window.open("https://www.linkedin.com/in/marcelo-gonz%C3%A1lez-l%C3%B3pez-009630105/", "_blank");
@@ -16,21 +17,25 @@ const Toggle = () => {
     window.open("https://www.youtube.com/@marcelo-Enquadre", "_blank");
   }
 
+  const handleItemClick = (id) => {
+    setIsOpen(false); // Cerrar el toggle al hacer clic en un elemento
+    navigateToSection(id); // Navegar a la sección correspondiente
+  };
 
   return (
     <body>
-        <input type="checkbox" id="overlay-input" />
+        <input type="checkbox" id="overlay-input" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
         <label for="overlay-input" id="overlay-button"><span></span></label>
         <div id="overlay">
             <ul>
-            <li><a href="#first">Inicio </a></li>
-            <li><a href="#second">Servicios </a></li>
-            <li><a href="#third">Nosotros </a></li>
-            <li><a href="#fourth">Clientes </a></li>
-            <li><a href="#fifth">Contacto</a></li>
-            <li><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={linkedIn} url="https://www.linkedin.com" /></li>
-            <li><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={instagram} url="https://www.instagram.com/" /></li>
-            <li><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={youtube} url="https://www.youtube.com/" /></li>
+            <li onClick={() => handleItemClick("first")}><a href="#first">Inicio </a></li>
+            <li onClick={() => handleItemClick("second")}><a href="#second">Servicios </a></li>
+            <li onClick={() => handleItemClick("third")}><a href="#third">Nosotros </a></li>
+            <li onClick={() => handleItemClick("fourth")}><a href="#fourth">Clientes </a></li>
+            <li onClick={() => handleItemClick("fifth")}><a href="#fifth">Contacto</a></li>
+            <li onClick={linkedIn}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.linkedin.com" /></li>
+            <li onClick={instagram}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.instagram.com/" /></li>
+            <li onClick={youtube}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.youtube.com/" /></li>
             </ul>
         </div>
     </body>
@@ -38,4 +43,3 @@ const Toggle = () => {
 };
 
 export default Toggle;
-
