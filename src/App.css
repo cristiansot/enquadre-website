@@ -1,6 +1,6 @@
-/* * {
+* {
   outline: 1px rgb(99, 207, 244) dashed;
-} */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
@@ -200,6 +200,9 @@ h3 {
   }
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 350px;
     margin-left: -100px;
   }
@@ -250,7 +253,8 @@ h3 {
     display: flex;
     position: absolute;
     justify-content: center;
-    width: 106%;
+    width: 100%;
+    height: 103%;
     z-index: -1;
   }
   

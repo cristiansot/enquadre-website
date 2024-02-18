@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 100px 100px;
-  gap: 70px;
+  gap: 100px;
 }
 
 .componentButton img{
@@ -23,22 +23,30 @@
 }
 
 @media screen and (max-width: 650px) {
+
   .wrapper {
     display: flex;
     flex-direction:column;
     margin-top: -50px;
     width: 15%;
-    margin-left: 60px;
+    margin-left: 100px;
     gap: 0px;
+  }
+
+  .scania{
+    width: 90% !important;
+    margin-left: 30px;
+  }
+  
+  .gildemeister{
+    width: 100% !important;
+    margin-left: 20px;
   }
   
   .componentButton{
-   
-   padding-top: 10px;
-    /* height: 10%; */
+    padding-top: 10px;
     margin-top: 0px;
   }
-
 
   h2{
     display: none;

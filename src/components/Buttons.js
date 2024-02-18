@@ -5,7 +5,6 @@ import BtnWalmart from '../components/BtnWalmart'
 import BtnCardif from '../components/BtnCardif'
 import BtnGildemeister from '../components/BtnGildemeister'
 import BtnAguas from '../components/BtnAguas'
-import '../assets/css/buttons.css'
 
 const Buttons = (() =>{
   return (

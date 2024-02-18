@@ -9,6 +9,7 @@ import Buttons from '../components/Buttons'
 import HomeButton from '../components/HomeButton'
 
 import '../assets/css/slider.css';
+
 import home from '../assets/img/home.jpg';
 import nosotros from '../assets/img/nosotros.jpg';
 import clientes from '../assets/img/clientes.jpg';

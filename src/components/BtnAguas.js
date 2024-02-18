@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import '../assets/css/lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import btn from '../assets/img/botones/btn_aguas.png';
 import '../assets/css/buttons.css'
+import '../assets/css/lightbox.css'
 
 const VideoPlugin = () => {
   const [open, setOpen] = useState(false); // State for controlling lightbox open/close
@@ -46,7 +46,7 @@ const VideoPlugin = () => {
 
       {/* Lightbox component (rendered conditionally based on open state) */}
       {open && (
-        <div className="lightbox">
+        <div className="lightbox" >
           <div className="lightbox-container">
             {lightboxContent.type === "video" ? (
               <div className="lightbox-video">

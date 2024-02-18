@@ -51,5 +51,5 @@
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
-  }
+  }  
 }

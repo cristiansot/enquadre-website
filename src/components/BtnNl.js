@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import '../assets/css/lightbox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import btn from '../assets/img/botones/btn_nl.png';
