@@ -1,5 +1,5 @@
 {
-  "homepage": "https://cristiansot.github.io/enquadre-website",
+  "homepage": "http://cristiansot.github.io/enquadre-website",
   "name": "enquadre-website",
   "version": "0.1.0",
   "private": true,
@@ -51,5 +51,5 @@
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
-  }  
+  }
 }

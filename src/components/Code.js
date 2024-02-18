@@ -170,7 +170,7 @@ const Code = () => {
 
       <Whatsapp />
       <Toggle className="toggle" />
-      //Implementar
+
       {/* <Toggle navigateToSection={navigateSectionById} /> */}
 
 
@@ -205,7 +205,6 @@ const Code = () => {
       
       <Section 
         id="fourth"
-        // title="Clientes"
         className="fourth"
         bgUrl={clientes} 
       >
