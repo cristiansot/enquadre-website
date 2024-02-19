@@ -171,9 +171,7 @@ const Code = () => {
       <Whatsapp />
       <Toggle className="toggle" />
 
-      {/* <Toggle navigateToSection={navigateSectionById} /> */}
-
-
+      
       <Section
         id="first"
         className="first"

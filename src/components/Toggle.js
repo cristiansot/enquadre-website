@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
 import "../assets/css/toggle.css";
 
-const Toggle = ({ navigateToSection }) => {
+const Toggle = ({ navigateSectionById }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function linkedIn() {
@@ -18,14 +18,14 @@ const Toggle = ({ navigateToSection }) => {
   }
 
   const handleItemClick = (id) => {
-    setIsOpen(false); // Cerrar el toggle al hacer clic en un elemento
-    navigateToSection(id); // Navegar a la sección correspondiente
+    setIsOpen(false); // Close the toggle when clicking on an item
+    navigateSectionById(id); // Navigate to the corresponding section
   };
 
   return (
     <body>
         <input type="checkbox" id="overlay-input" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
-        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <label htmlFor="overlay-input" id="overlay-button"><span></span></label>
         <div id="overlay">
             <ul>
             <li onClick={() => handleItemClick("first")}><a href="#first">Inicio </a></li>
