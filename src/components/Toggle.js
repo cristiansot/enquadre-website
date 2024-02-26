@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
 import "../assets/css/toggle.css";
 
-const Toggle = ({ navigateSectionById }) => {
+const Toggle = ({ handleSectionChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function linkedIn() {
@@ -17,27 +17,27 @@ const Toggle = ({ navigateSectionById }) => {
     window.open("https://www.youtube.com/@marcelo-Enquadre", "_blank");
   }
 
-  const handleItemClick = (id) => {
-    setIsOpen(false); // Close the toggle when clicking on an item
-    navigateSectionById(id); // Navigate to the corresponding section
+  const handleItemClick = () => {
+    setIsOpen(false); // Cerrar el toggle al hacer clic en un elemento
   };
-
+  
   return (
     <body>
         <input type="checkbox" id="overlay-input" checked={isOpen} onChange={() => setIsOpen(!isOpen)} />
         <label htmlFor="overlay-input" id="overlay-button"><span></span></label>
-        <div id="overlay">
-            <ul>
-            <li onClick={() => handleItemClick("first")}><a href="#first">Inicio </a></li>
-            <li onClick={() => handleItemClick("second")}><a href="#second">Servicios </a></li>
-            <li onClick={() => handleItemClick("third")}><a href="#third">Nosotros </a></li>
-            <li onClick={() => handleItemClick("fourth")}><a href="#fourth">Clientes </a></li>
-            <li onClick={() => handleItemClick("fifth")}><a href="#fifth">Contacto</a></li>
-            <li onClick={linkedIn}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.linkedin.com" /></li>
-            <li onClick={instagram}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.instagram.com/" /></li>
-            <li onClick={youtube}><SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" url="https://www.youtube.com/" /></li>
-            </ul>
+        <div className="contentNavToggle" id="overlay">
+          <nav >
+              <a href="#first" onClick={handleItemClick}>Inicio</a>
+              <a href="#second" onClick={handleItemClick}>Servicios</a>
+              <a href="#third" onClick={handleItemClick}>Nosotros</a>
+              <a href="#fourth" onClick={handleItemClick}>Clientes</a>
+              <a href="#fifth" onClick={handleItemClick}>Contacto</a>
+              <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={() => { linkedIn(); handleItemClick(); }} url="https://www.linkedin.com" />
+              <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={() => { instagram(); handleItemClick(); }} url="https://www.instagram.com/" />
+              <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={() => { youtube(); handleItemClick(); }} url="https://www.youtube.com/" />
+          </nav>
         </div>
+        
     </body>
   );
 };

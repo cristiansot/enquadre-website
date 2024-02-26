@@ -57,6 +57,7 @@ function youtube() {
 //Integrar promps para pasar la info desde toggle button
 
 const Code = () => {
+
   useEffect(() => {
     let sections = document.querySelectorAll('.section'),
       images = document.querySelectorAll('.background'),
@@ -77,7 +78,7 @@ const Code = () => {
       let fromTop = direction === -1;
       let dFactor = fromTop ? -1 : 1;
       let tl = gsap.timeline({
-        defaults: { duration: 1.25, ease: 'power1.inOut' },
+        defaults: { duration: 1, ease: 'power1.inOut' },
         onComplete: () => (animating = false),
       });
 
@@ -148,9 +149,10 @@ const Code = () => {
         navigateSectionById(e.currentTarget.getAttribute('href').slice(1));
       });
     });
-
+    
     gotoSection(0, 1);
   }, []);
+
 
   return (
     <div className="app-container">
@@ -169,7 +171,8 @@ const Code = () => {
       </header>
 
       <Whatsapp />
-      <Toggle className="toggle" />
+
+      <Toggle  />
 
       
       <Section

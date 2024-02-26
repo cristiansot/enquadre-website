@@ -1,5 +1,5 @@
 {
-    "homepage": "http://cristiansot.github.io/enquadre-website",
+    "homepage": "https://cristiansot.github.io/enquadre-website/",
     "name": "enquadre-website",
     "version": "0.1.0",
     "private": true,
@@ -22,9 +22,9 @@
         "yet-another-react-lightbox": "^3.17.0"
     },
     "scripts": {
+        "start": "react-scripts start",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
@@ -51,6 +51,7 @@
         "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
         "autoprefixer": "^10.4.17",
         "gh-pages": "^6.1.1",
+        "gh-pages-deploy": "^0.5.1",
         "postcss": "^8.4.35"
     }
 }
