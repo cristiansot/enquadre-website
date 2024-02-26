@@ -36,6 +36,7 @@ form textarea {
 @media screen and (max-width: 650px) {
 
   form {
+    display: none;
    margin-bottom: 120px;
   }
 
@@ -54,4 +55,5 @@ form textarea {
   .email{
     margin-top: 0px;
   }
+
 }
