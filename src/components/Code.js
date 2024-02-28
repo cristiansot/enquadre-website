@@ -173,7 +173,6 @@ const Code = () => {
       <Whatsapp />
 
       <Toggle  />
-
       
       <Section
         id="first"
@@ -225,7 +224,7 @@ const Code = () => {
         <h3 className='movil' href="tel:+56993595606" >
           Móvil: +56 9 9359 5606
         </h3>
-        <Form className='form'/> 
+        {/* <Form className='form'/>  */}
         <img className='contactoMobile' src={contactoMobile} alt="Contacto" />    
       </Section>
     </div>
