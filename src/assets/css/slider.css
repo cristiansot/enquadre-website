@@ -17,7 +17,7 @@
   pointer-events: auto;
 }
 .slider__slide-content {
-  z-index: 6;
+  z-index: 5;
   position: relative;
   display: flex;
   justify-content: center;
@@ -55,7 +55,7 @@
 }
 .slider__slide-parts:after {
   content: "";
-  z-index: 5;
+  z-index: 4;
   position: absolute;
   left: 0;
   top: 0;
@@ -162,7 +162,7 @@
 }
 
 .slider__control {
-  z-index: 100;
+  z-index: 5;
   position: absolute;
   margin-top: 70px;
   display: flex;

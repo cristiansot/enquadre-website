@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'; // Import useState and useEffect
+import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
-import ('../assets/css/slider.css')
+import VerReelButton from './VerReelButton'; // Asegúrate de que la ruta sea correcta
+import '../assets/css/slider.css';
 
 const Slider = ({ slides }) => { 
   const [activeSlide, setActiveSlide] = useState(-1); 
@@ -10,11 +11,10 @@ const Slider = ({ slides }) => {
   useEffect(() => { 
     // mounted
     if (slides) {
-        // runAutochangeTO();
-        setTimeout(() => {
-          setActiveSlide(0)
-          setSliderReady(true)
-        }, 0); 
+      setTimeout(() => {
+        setActiveSlide(0)
+        setSliderReady(true)
+      }, 0); 
     }
   }, [slides])
   
@@ -39,13 +39,12 @@ const Slider = ({ slides }) => {
             <div
               className={classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index  })}
               key={slide.servicios}
-              >
+            >
               <div className="slider__slide-content">
                 <h3 className="slider__slide-subheading">{slide.country || slide.servicios}</h3>
                 
-                {/* <h2 className="slider__slide-heading">
-                  {slide.servicios.split('').map(l => <span>{l}</span>)}
-                </h2> */}
+                {/* Aquí pasamos la URL del video como prop al componente VerReelButton */}
+                {activeSlide === index && <VerReelButton videoUrl={slide.videoUrl} />}
               </div>
               <div className="slider__slide-parts">
                 {[...Array(IMAGE_PARTS).fill()].map((x, i) => (
@@ -57,13 +56,12 @@ const Slider = ({ slides }) => {
             </div>
           ))}
         </div>
-          <div className='contentSliderControl'>
-            <div className="slider__control" onClick={() => changeSlides(-1)} />
-            <div className="slider__control slider__control--right" onClick={() => changeSlides(1)} />
-          </div>
+        <div className='contentSliderControl'>
+          <div className="slider__control" onClick={() => changeSlides(-1)} />
+          <div className="slider__control slider__control--right" onClick={() => changeSlides(1)} />
+        </div>
       </div>
     );
-    
 }
 
 const IMAGE_PARTS = 4;

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
 import Slider from '../components/Slider'; 
-import Form from '../components/Form';
+// import Form from '../components/Form';
 import Whatsapp from '../components/Whatsapp'
 import Toggle from './Toggle';
 import Buttons from '../components/Buttons'
@@ -31,15 +31,15 @@ import clientesMobile from '../assets/img/mobile/clientes_mobile.jpg'
 import contactoMobile from '../assets/img/mobile/contacto_mobile.jpg'
 
 const slides = [
-  { servicios: 'CORPORATIVO', img: corporativo },
-  { servicios: 'SPOT PUBLICITARIO', img: spot,},
-  { servicios: 'COMUNICACIÓN INTERNA', img: comunicacion, },
-  { servicios: 'AUTOMOTRIZ', img: automotriz, },
-  { servicios: 'INDUSTRIAL', img: industrial, },
-  { servicios: 'FOTOGRAFÍA', img: fotografia, },
-  { servicios: 'STREAMING', img: streaming, },
-  { servicios: 'MOTION GRAPHICS', img: motion, },
-  { servicios: 'SERVICE', img: service, },
+  { servicios: 'CORPORATIVO', img: corporativo, videoUrl: 'http://www.enquadre.cl//videos/corporativo.mp4' },
+  { servicios: 'SPOT PUBLICITARIO', img: spot, videoUrl: 'https://www.enquadre.cl/videos/general.mp4' },
+  { servicios: 'COMUNICACIÓN INTERNA', img: comunicacion, videoUrl: 'http://www.enquadre.cl//videos/com_interna.mp4' },
+  { servicios: 'AUTOMOTRIZ', img: automotriz, videoUrl: 'http://www.enquadre.cl//videos/automotriz.mp4' },
+  { servicios: 'INDUSTRIAL', img: industrial, videoUrl: 'http://www.enquadre.cl//videos/industrial.mp4' },
+  { servicios: 'FOTOGRAFÍA', img: fotografia, videoUrl: 'http://www.enquadre.cl//videos/fotografia.mp4' },
+  { servicios: 'STREAMING', img: streaming, videoUrl: 'https://www.enquadre.cl/videos/general.mp4' },
+  { servicios: 'MOTION GRAPHICS', img: motion, videoUrl: 'http://www.enquadre.cl//videos/motion.mp4' },
+  { servicios: 'SERVICE', img: service, videoUrl: 'http://www.enquadre.cl//videos/service.mp4' },
 ];
 
 function linkedIn() {
@@ -53,8 +53,6 @@ function instagram() {
 function youtube() {
   window.open("https://www.youtube.com/@marcelo-Enquadre", "_blank");
 }
-
-//Integrar promps para pasar la info desde toggle button
 
 const Code = () => {
 

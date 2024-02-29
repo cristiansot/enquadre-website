@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import btn from '../assets/img/botones/btn_wal.png';
 import '../assets/css/buttons.css'
+import '../assets/css/lightbox.css';
 
 const VideoPlugin = () => {
   const [open, setOpen] = useState(false); // State for controlling lightbox open/close

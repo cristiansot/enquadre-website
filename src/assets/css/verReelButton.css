@@ -1,0 +1,14 @@
+.verReelButton {
+    display: flex;
+    position: absolute;  
+    background-color: transparent !important;
+    border: none;
+    margin-top: 24rem;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .verReelButton {
+        margin-top: 19rem
+    }
+  }

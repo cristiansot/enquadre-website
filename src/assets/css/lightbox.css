@@ -1,47 +1,37 @@
-.lightbox {
-  display: flex;
-  justify-items: center;
+.mainLightbox {
+  display: flex;  
   justify-content: center;
-  position: absolute;
-  width: 1200px;
-  z-index: 100;
-  margin-left: -70px;
-  }
-  
-  /* Importante para centrar la barra de control */
-  .lightbox-container {
-    justify-content: center;
-    align-items: center;
-    margin-top: -100px;
-  }
-  
-  .lightbox-video{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .lightbox-video video{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-    
-  .lightbox-toggle {
-    display: flex;
-    position: absolute;
-    margin-top: 20px;
-    font-size: 40px;
-    /* -webkit-margin-start: 550px; */
-  }
+  align-items: center;
+  position: absolute; /* Cambiar a position: fixed */
+  align-items: center;
+  width: 80%;
+}
 
-  @media screen and (max-width: 650px) {
-    .lightbox {
-      display: flex;
-      justify-content: center;
-      width: 410px;
-      margin-left: -14pc;
-      align-items: center;
-      align-content: center;
-      margin-top: 300px;
-    }
-  }
+.mainLightbox.show {
+  display: flex; /* Mostrar el lightbox cuando la clase .show está presente */
+}
+
+.mainLightbox-container {
+  position: relative;
+}
+
+.mainLightbox-video {
+  display: flex;
+  justify-content: center;
+}
+
+.mainLightbox-video video {
+  width: 80%; /* Ajustar el ancho del video según sea necesario */
+  max-width: 100%;
+  height: auto; /* Mantener la proporción de aspecto */
+}
+
+.mainLightbox-toggle {
+  position: flex; /* Cambiar a position: fixed */
+  margin-top: -20px; /* Ajustar la posición según sea necesario */
+  margin-left: 10px ; /* Ajustar la posición según sea necesario */
+  color: white;
+  font-size: 24px; /* Ajustar el tamaño del icono según sea necesario */
+  z-index: 10000; /* Asegurarse de que esté por encima del lightbox */
+  cursor: pointer;
+}
