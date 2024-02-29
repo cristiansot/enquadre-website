@@ -1,57 +1,47 @@
-.mainLightbox {
+.lightbox {
   display: flex;
-  width: 80%;
-  position: absolute;
-  
-}
-
-.mainLightbox.show {
-  display: flex; 
-}
-
-.mainLightbox-container {
-  position: relative;
-  z-index: 1000 !important;
-}
-
-.mainLightbox-video {
-  display: flex;
+  justify-items: center;
   justify-content: center;
-}
-
-.mainLightbox-video video {
-  width: 80%; 
-  max-width: 100%;
-  height: auto; 
-  border-radius: 30px !important;
-  box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.322);
-}
-
-.mainLightbox-toggle {
-  position: flex; 
-  margin-top: -20px; 
-  margin-left: 10px ; 
-  color: white;
-  font-size: 24px; 
-  cursor: pointer;
-}
-
-@media screen and (max-width: 650px) {
-
-  .mainLightbox {
+  position: absolute;
+  width: 1200px;
+  z-index: 100z;
+  margin-left: -70px;
+  }
+  
+  /* Importante para centrar la barra de control */
+  .lightbox-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+  }
+  
+  .lightbox-video{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lightbox-video video{
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
-
-  .mainLightbox-video video {
-    width: 100%; 
-    max-width: 100%;
+    
+  .lightbox-toggle {
+    display: flex;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 40px;
+    /* -webkit-margin-start: 550px; */
   }
 
-  .mainLightbox-toggle {
-    position: absolute; 
-    margin-top: -40px; 
-    justify-content: center !important;
-    font-size: 24px; 
+  @media screen and (max-width: 650px) {
+    .lightbox {
+      display: flex;
+      justify-content: center;
+      width: 410px;
+      margin-left: -14pc;
+      align-items: center;
+      align-content: center;
+      margin-top: 300px;
+    }
   }
-  
-}

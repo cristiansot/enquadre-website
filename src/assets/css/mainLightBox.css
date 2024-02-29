@@ -1,0 +1,57 @@
+.mainLightbox {
+    display: flex;
+    width: 80%;
+    position: absolute;
+    
+  }
+  
+  .mainLightbox.show {
+    display: flex; 
+  }
+  
+  .mainLightbox-container {
+    position: relative;
+    z-index: 1000 !important;
+  }
+  
+  .mainLightbox-video {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mainLightbox-video video {
+    width: 80%; 
+    max-width: 100%;
+    height: auto; 
+    border-radius: 30px !important;
+    box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.322);
+  }
+  
+  .mainLightbox-toggle {
+    position: flex; 
+    margin-top: -20px; 
+    margin-left: 10px ; 
+    color: white;
+    font-size: 24px; 
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 650px) {
+  
+    .mainLightbox {
+      width: 100%;
+    }
+  
+    .mainLightbox-video video {
+      width: 100%; 
+      max-width: 100%;
+    }
+  
+    .mainLightbox-toggle {
+      position: absolute; 
+      margin-top: -40px; 
+      justify-content: center !important;
+      font-size: 24px; 
+    }
+    
+  }

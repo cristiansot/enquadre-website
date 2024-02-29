@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import btnVer from '../assets/img/play.png';
 import '../assets/css/verReelButton.css';
-import '../assets/css/lightbox.css';
+import '../assets/css/mainLightBox.css';
 
 
 const VerReelButton = ({ videoUrl }) => {
