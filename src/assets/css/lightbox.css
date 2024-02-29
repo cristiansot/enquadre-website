@@ -1,6 +1,8 @@
 .mainLightbox {
+  display: flex;
   width: 80%;
-  position: relative;
+  position: absolute;
+  
 }
 
 .mainLightbox.show {
@@ -18,9 +20,9 @@
 }
 
 .mainLightbox-video video {
-  width: 80%; /* Ajustar el ancho del video según sea necesario */
+  width: 80%; 
   max-width: 100%;
-  height: auto; /* Mantener la proporción de aspecto */
+  height: auto; 
   border-radius: 30px !important;
   box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.322);
 }
@@ -41,7 +43,7 @@
   }
 
   .mainLightbox-video video {
-    width: 100%; /* Ajustar el ancho del video según sea necesario */
+    width: 100%; 
     max-width: 100%;
   }
 

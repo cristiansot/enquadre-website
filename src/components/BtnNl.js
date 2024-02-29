@@ -46,7 +46,7 @@ const VideoPlugin = () => {
 
       {/* Lightbox component (rendered conditionally based on open state) */}
       {open && (
-        <div className="lightbox">
+        <div className="Lightbox">
           <div className="lightbox-container">
             {lightboxContent.type === "video" ? (
               <div className="lightbox-video">
