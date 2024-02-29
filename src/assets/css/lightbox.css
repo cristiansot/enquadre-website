@@ -1,18 +1,15 @@
 .mainLightbox {
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  position: absolute; /* Cambiar a position: fixed */
-  align-items: center;
   width: 80%;
+  position: relative;
 }
 
 .mainLightbox.show {
-  display: flex; /* Mostrar el lightbox cuando la clase .show está presente */
+  display: flex; 
 }
 
 .mainLightbox-container {
   position: relative;
+  z-index: 1000 !important;
 }
 
 .mainLightbox-video {
@@ -24,14 +21,35 @@
   width: 80%; /* Ajustar el ancho del video según sea necesario */
   max-width: 100%;
   height: auto; /* Mantener la proporción de aspecto */
+  border-radius: 30px !important;
+  box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.322);
 }
 
 .mainLightbox-toggle {
-  position: flex; /* Cambiar a position: fixed */
-  margin-top: -20px; /* Ajustar la posición según sea necesario */
-  margin-left: 10px ; /* Ajustar la posición según sea necesario */
+  position: flex; 
+  margin-top: -20px; 
+  margin-left: 10px ; 
   color: white;
-  font-size: 24px; /* Ajustar el tamaño del icono según sea necesario */
-  z-index: 10000; /* Asegurarse de que esté por encima del lightbox */
+  font-size: 24px; 
   cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+
+  .mainLightbox {
+    width: 100%;
+  }
+
+  .mainLightbox-video video {
+    width: 100%; /* Ajustar el ancho del video según sea necesario */
+    max-width: 100%;
+  }
+
+  .mainLightbox-toggle {
+    position: absolute; 
+    margin-top: -40px; 
+    justify-content: center !important;
+    font-size: 24px; 
+  }
+  
 }
