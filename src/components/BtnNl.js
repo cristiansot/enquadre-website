@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
@@ -41,12 +42,12 @@ const VideoPlugin = () => {
     <>
       {/* Button to open the lightbox */}
       <button type="button" className='componentButton' onClick={handleClick}>
-        <img src={btn} alt="Ver Reel" style={{ cursor: 'pointer' }} /> 
+        <img className="" src={btn} alt="Ver Reel" style={{ cursor: 'pointer' }} /> 
       </button>
 
       {/* Lightbox component (rendered conditionally based on open state) */}
       {open && (
-        <div className="Lightbox">
+        <div className="lightbox">
           <div className="lightbox-container">
             {lightboxContent.type === "video" ? (
               <div className="lightbox-video">
@@ -68,7 +69,5 @@ const VideoPlugin = () => {
 }
 
 export default VideoPlugin;
-
-
 
 

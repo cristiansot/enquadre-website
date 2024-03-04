@@ -3,12 +3,12 @@
     position: absolute;  
     background-color: transparent !important;
     border: none;
-    margin-top: 24rem;
+    margin-top: 9rem;
     margin-left: 8px;
   }
 
   @media screen and (max-width: 650px) {
     .verReelButton {
-        margin-top: 17rem
+        margin-top: 7rem
     }
   }

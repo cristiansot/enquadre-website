@@ -60,11 +60,6 @@ nav {
   align-items: center;
 }
 
-.slides {
-  position: absolute;
-  z-index: 100;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -89,9 +84,11 @@ body {
 .email{ 
   margin-bottom: 300px;
 }
+
 .movil{ 
   margin-bottom: 200px;
 }
+
 /* Boton Principal */
 .verReel {
   position: absolute;  
@@ -129,11 +126,6 @@ header {
   font-family: "Montserrat";
   font-size: clamp(0.66rem, 2vw, 1rem);
   letter-spacing: 0.5em;
-}
-
-Slider{ 
-  display: flex;
-  position: absolute;
 }
 
 .texto {

@@ -1,7 +1,8 @@
 .mainLightbox {
     display: flex;
     width: 80%;
-    position: absolute;
+    position: relative;
+    z-index: 999 !important;
   }
   
   .mainLightbox.show {
@@ -10,7 +11,7 @@
   
   .mainLightbox-container {
     position: relative;
-    z-index: 1000 !important;
+    z-index: 999 !important; /* Ajustamos el z-index del lightbox a un valor más alto */
   }
   
   .mainLightbox-video {
@@ -52,5 +53,4 @@
       justify-content: center !important;
       font-size: 24px; 
     }
-    
   }

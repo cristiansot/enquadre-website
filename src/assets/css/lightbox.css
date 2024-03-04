@@ -4,9 +4,9 @@
   justify-content: center;
   position: absolute;
   width: 1200px;
-  z-index: 100z;
+  z-index: 10; /* Corrección del valor de z-index */
   margin-left: -70px;
-  }
+}
   
   /* Importante para centrar la barra de control */
   .lightbox-container {
@@ -40,8 +40,8 @@
     .lightbox {
       display: flex;
       justify-content: center;
-      width: 410px;
-      margin-left: -14pc;
+      width: 480px;
+      margin-left: -264px;
       align-items: center;
       align-content: center;
       margin-top: 300px;

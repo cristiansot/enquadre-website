@@ -1,3 +1,4 @@
+// VerReelButton.js
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
@@ -5,31 +6,27 @@ import btnVer from '../assets/img/play.png';
 import '../assets/css/verReelButton.css';
 import '../assets/css/mainLightBox.css';
 
+const VerReelButton = ({ videoUrl, toggleControls }) => {
+  const [open, setOpen] = useState(false);
 
-const VerReelButton = ({ videoUrl }) => {
-  const [open, setOpen] = useState(false); // Estado local para controlar si el botón está abierto o cerrado
-
-  // Función para abrir el botón cuando se hace clic en él
   const handleClick = () => {
     setOpen(true);
+    toggleControls(false); // Oculta los controles al abrir el lightbox
   };
 
-  // Función para cerrar el botón
   const handleClose = () => {
     setOpen(false);
+    toggleControls(true); // Muestra los controles al cerrar el lightbox
   };
 
-  // Function to handle key press events
   const handleKeyPress = (event) => {
     if (event.key === 'Escape') {
       handleClose();
     }
   };
 
-  // Add event listener for key press events when the component mounts
   useEffect(() => {
     document.addEventListener('keydown', handleKeyPress);
-    // Remove event listener when the component unmounts
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
     };
@@ -37,17 +34,15 @@ const VerReelButton = ({ videoUrl }) => {
 
   return (
     <>
-      {/* Botón para abrir el video */}
       <button type="button" className='verReelButton' onClick={handleClick}>
-        <img src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} /> 
+        <img src={btnVer} alt="Ver" style={{ cursor: 'pointer' }} />
       </button>
-  
-      {/* Componente del video (renderizado condicionalmente según el estado "open") */}
+
       {open && (
         <div className="mainLightbox">
           <div className="mainLightbox-container">
             <div className="mainLightbox-video">
-              <video controls autoPlay> 
+              <video controls autoPlay>
                 <source src={videoUrl} type="video/mp4" />
               </video>
               <div />
