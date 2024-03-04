@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import btnVer from '../assets/img/boton_ver_reel.png';
-import '../assets/css/mainLightBox.css';
+import '../assets/css/homeButtonLightBox.css';
 
 
 const VideoPlugin = () => {
@@ -46,15 +46,15 @@ const VideoPlugin = () => {
   
       {/* Lightbox component (rendered conditionally based on open state) */}
       {open && (
-        <div className="mainLightbox">
-          <div className="mainLightbox-container">
+        <div className="homeLightbox">
+          <div className="homeLightbox-container">
             {lightboxContent.type === "video" ? (
-              <div className="mainLightbox-video">
+              <div className="homeLightbox-video">
                 <video controls autoPlay> 
                   <source src={lightboxContent.content} type="video/mp4" />
                 </video>
                 <div />
-                <a href="#lightbox" className="mainLightbox-toggle" onClick={handleClose}>
+                <a href="#lightbox" className="homeLightbox-toggle" onClick={handleClose}>
                   {/* <FontAwesomeIcon icon={faTimes} />} */}
                   <FontAwesomeIcon icon={faCircleXmark} />
                 </a>

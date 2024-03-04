@@ -1,0 +1,56 @@
+.homeLightbox {
+  display: flex;
+  width: 80%;
+  position: absolute;
+  z-index: 999 !important;
+}
+
+.homeLightbox.show {
+  display: flex; 
+}
+
+.homeLightbox-container {
+  position: relative;
+  z-index: 999 !important; /* Ajustamos el z-index del lightbox a un valor más alto */
+}
+
+.homeLightbox-video {
+  display: flex;
+  justify-content: center;
+}
+
+.homeLightbox-video video {
+  width: 80%; 
+  max-width: 100%;
+  height: auto; 
+  border-radius: 30px !important;
+  box-shadow: 10px 5px 15px 3px rgba(0, 0, 0, 0.322);
+}
+
+.homeLightbox-toggle {
+  position: flex; 
+  margin-top: -20px; 
+  margin-left: 10px ; 
+  color: white;
+  font-size: 24px; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+
+  .homeLightbox {
+    width: 100%;
+  }
+
+  .homeLightbox-video video {
+    width: 100%; 
+    max-width: 100%;
+  }
+
+  .homeLightbox-toggle {
+    position: absolute; 
+    margin-top: -40px; 
+    justify-content: center !important;
+    font-size: 24px; 
+  }
+}

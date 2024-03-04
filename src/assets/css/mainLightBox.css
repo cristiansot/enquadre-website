@@ -1,10 +1,10 @@
 .mainLightbox {
     display: flex;
-    width: 80%;
+    width: 90%;
     position: relative;
     z-index: 999 !important;
   }
-  
+
   .mainLightbox.show {
     display: flex; 
   }
