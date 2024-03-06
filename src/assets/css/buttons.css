@@ -10,7 +10,21 @@
 
 .componentButton img{
   width: 150%;
+  transform: scale(1);
 }
+
+@keyframes componentButton {
+    0% {
+     transform: scale3d(1, 1, 1);
+   }
+    50% {
+      transform: scale3d(1.3, 1.3, 0.1);
+    }
+  }
+
+.componentButton:hover {
+   animation: componentButton 1s;
+   }
 
 .scania{
   width: 80% !important;
