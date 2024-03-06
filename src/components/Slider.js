@@ -46,7 +46,10 @@ const Slider = ({ slides }) => {
           >
             <div className="slider__slide-content">
               <div className="reelButton">
-                {activeSlide === index && <VerReelButton videoUrl={slide.videoUrl} toggleControls={toggleControls} />}
+                {/* Agregar la condición para no renderizar el botón en la sección de streaming */}
+                {activeSlide === index && slide.servicios !== 'STREAMING' && (
+                  <VerReelButton videoUrl={slide.videoUrl} toggleControls={toggleControls} />
+                )}
               </div>
               <h3 className="slider__slide-subheading">{slide.country || slide.servicios}</h3>
             </div>

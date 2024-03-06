@@ -1,6 +1,6 @@
 .mainLightbox {
     display: flex;
-    width: 90%;
+    width: 80%;
     position: relative;
     z-index: 999 !important;
   }

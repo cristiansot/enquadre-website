@@ -32,12 +32,12 @@ import contactoMobile from '../assets/img/mobile/contacto_mobile.jpg'
 
 const slides = [
   { servicios: 'CORPORATIVO', img: corporativo, videoUrl: 'http://www.enquadre.cl//videos/corporativo.mp4' },
-  { servicios: 'SPOT PUBLICITARIO', img: spot, videoUrl: 'https://www.enquadre.cl/videos/general.mp4' },
+  { servicios: 'SPOT PUBLICITARIO', img: spot, videoUrl: 'https://www.enquadre.cl/videos/spot.mp4' },
   { servicios: 'COMUNICACIÓN INTERNA', img: comunicacion, videoUrl: 'http://www.enquadre.cl//videos/com_interna.mp4' },
   { servicios: 'AUTOMOTRIZ', img: automotriz, videoUrl: 'http://www.enquadre.cl//videos/automotriz.mp4' },
   { servicios: 'INDUSTRIAL', img: industrial, videoUrl: 'http://www.enquadre.cl//videos/industrial.mp4' },
   { servicios: 'FOTOGRAFÍA', img: fotografia, videoUrl: 'http://www.enquadre.cl//videos/fotografia.mp4' },
-  { servicios: 'STREAMING', img: streaming, videoUrl: 'https://www.enquadre.cl/videos/general.mp4' },
+  { servicios: 'STREAMING', img: streaming, },
   { servicios: 'MOTION GRAPHICS', img: motion, videoUrl: 'http://www.enquadre.cl//videos/motion.mp4' },
   { servicios: 'SERVICE', img: service, videoUrl: 'http://www.enquadre.cl//videos/service.mp4' },
 ];
@@ -154,9 +154,10 @@ const Code = () => {
 
   return (
     <div className="app-container">
-      <header className="header">
-      <img className='logo' src={logo} alt="logo" />
+      <header className="header">     
         <nav>
+        <a href="#first"><img className='logo' src={logo} alt="logo" /></a>
+        
           <a href="#first">Inicio </a>
           <a href="#second">Servicios </a>
           <a href="#third">Nosotros </a>
@@ -197,7 +198,9 @@ const Code = () => {
       >
         <img className='nosotrosMobile' src={nosotrosMobile} alt="Nosotros" />    
         <p className='texto'>
-          "Creamos productos de calidad, de forma rápida y simple. Nuestra inspiración es ayudar a nuestros clientes a comunicar de manera eficiente, moderna, más amigable, cercana y apuntando hacia la sustentabilidad corporativa. Nos avala una amplia trayectoria en el rubro junto a un equipo humano que mezcla la experiencia y la innovación. Nuestra propuesta precio-calidad es de excelencia, equilibrada y adaptable."
+          Creamos productos de alta calidad, de forma rápida y simple. <br></br>
+          Nos avala una amplia trayectoria en el mercado y la confianza 
+          que grandes compañías han depositado en nosotros.
         </p>
       </Section>
       
