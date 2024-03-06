@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/enquadre-website/static/css/main.cf276603.css",
-    "main.js": "/enquadre-website/static/js/main.93e7b17d.js",
+    "main.css": "/enquadre-website/static/css/main.e654b914.css",
+    "main.js": "/enquadre-website/static/js/main.160ae509.js",
     "static/js/453.02d42757.chunk.js": "/enquadre-website/static/js/453.02d42757.chunk.js",
     "static/media/fotografia.jpg": "/enquadre-website/static/media/fotografia.dc26dd94c56376964a2a.jpg",
     "static/media/industrial.jpg": "/enquadre-website/static/media/industrial.8abe3a8e62e825b410a0.jpg",
@@ -20,20 +20,20 @@
     "static/media/nosotros.jpg": "/enquadre-website/static/media/nosotros.02acf6e6fb1b23bd3bc1.jpg",
     "static/media/clientes.jpg": "/enquadre-website/static/media/clientes.3ca3272a3ef43dd2f57f.jpg",
     "static/media/contacto.jpg": "/enquadre-website/static/media/contacto.a689cf69486b6f51b454.jpg",
-    "static/media/btn_scania.png": "/enquadre-website/static/media/btn_scania.c4723ea7111a7d2fa863.png",
-    "static/media/btn_cardif.png": "/enquadre-website/static/media/btn_cardif.5784586f58e44ed68b5e.png",
-    "static/media/btn_gil.png": "/enquadre-website/static/media/btn_gil.22a2a6c6b5e2dd3f4271.png",
-    "static/media/btn_wal.png": "/enquadre-website/static/media/btn_wal.ee46569fd782aef264a0.png",
-    "static/media/btn_aguas.png": "/enquadre-website/static/media/btn_aguas.ef5f00de66f80916fb19.png",
-    "static/media/btn_nl.png": "/enquadre-website/static/media/btn_nl.4398ddd1622b83260fa5.png",
+    "static/media/btn_scania.png": "/enquadre-website/static/media/btn_scania.b4c2936f4ae05c5b74c1.png",
+    "static/media/btn_cardif.png": "/enquadre-website/static/media/btn_cardif.3c4ea132930c59d98690.png",
+    "static/media/btn_gil.png": "/enquadre-website/static/media/btn_gil.79bad36649555d78ae4b.png",
+    "static/media/btn_wal.png": "/enquadre-website/static/media/btn_wal.85901848c66cc48571ce.png",
+    "static/media/btn_nl.png": "/enquadre-website/static/media/btn_nl.e10401f45b5bc454a5e3.png",
+    "static/media/btn_aguas.png": "/enquadre-website/static/media/btn_aguas.f04b1e5f0e8f3daae540.png",
     "static/media/logotipo.png": "/enquadre-website/static/media/logotipo.9634015f468c93e216b2.png",
     "index.html": "/enquadre-website/index.html",
-    "main.cf276603.css.map": "/enquadre-website/static/css/main.cf276603.css.map",
-    "main.93e7b17d.js.map": "/enquadre-website/static/js/main.93e7b17d.js.map",
+    "main.e654b914.css.map": "/enquadre-website/static/css/main.e654b914.css.map",
+    "main.160ae509.js.map": "/enquadre-website/static/js/main.160ae509.js.map",
     "453.02d42757.chunk.js.map": "/enquadre-website/static/js/453.02d42757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf276603.css",
-    "static/js/main.93e7b17d.js"
+    "static/css/main.e654b914.css",
+    "static/js/main.160ae509.js"
   ]
 }
