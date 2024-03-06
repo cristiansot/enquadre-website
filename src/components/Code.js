@@ -154,10 +154,10 @@ const Code = () => {
 
   return (
     <div className="app-container">
-      <header className="header">     
+      <header className="header">  
+      <img id='logotipo' src={logo} alt="logo" />
         <nav>
-        <a href="#first"><img className='logo' src={logo} alt="logo" /></a>
-        
+          <a href="#first"><img className='logo' src={logo} alt="logo" /></a>
           <a href="#first">Inicio </a>
           <a href="#second">Servicios </a>
           <a href="#third">Nosotros </a>
@@ -215,7 +215,6 @@ const Code = () => {
 
       <Section
         id="fifth"
-        title="Contacto"
         className="fifth"
         bgUrl={contacto} 
       >
@@ -223,7 +222,7 @@ const Code = () => {
           e-mail: marcelo@enquadre.cl
         </h3>
         <h3 className='movil' href="tel:+56993595606" >
-          Móvil: +56 9 9359 5606
+          Whatsapp: +56 9 9359 5606
         </h3>
         {/* <Form className='form'/>  */}
         <img className='contactoMobile' src={contactoMobile} alt="Contacto" />    
