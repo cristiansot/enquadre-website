@@ -54,10 +54,13 @@ p {
 
 nav {
   display: flex;
+  margin-top: 100px;
   flex-direction: row;
   margin-top: 58px;
   gap: 30px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
 }
 
 body {
@@ -129,10 +132,9 @@ header {
   padding: 0 5%;
   width: 100%;
   z-index: 3;
-  height: 7em;
   font-family: "Montserrat";
   font-size: clamp(0.66rem, 2vw, 1rem);
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
 }
 
 .texto {
@@ -195,7 +197,26 @@ h3 {
   color: rgb(227, 227, 227);
 }
 
-@media screen and (max-width: 650px) {
+/* En pantallas medianas (tablets) */
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  header {
+    margin-top: 100px !important;
+  }
+
+  button {
+    margin-top: 350px;
+    margin-left: -340px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
 
   nav{
     display: none;
@@ -203,9 +224,8 @@ h3 {
 
   #logotipo {
     width: 250px;
-    margin: 45px 0 0 10px;
-    top: -20px;
-
+    margin: 150px 0 0 10px;
+    top: -120px;
   }
 
   #overlay-button {
@@ -218,11 +238,8 @@ h3 {
   }
 
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 350px;
-    margin-left: -100px;
+    margin-left: -150px !important;
   }
 
   .verReel {

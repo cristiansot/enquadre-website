@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { SocialIcon } from 'react-social-icons';
 import Slider from '../components/Slider'; 
-// import Form from '../components/Form';
 import Whatsapp from '../components/Whatsapp'
 import Toggle from './Toggle';
 import Buttons from '../components/Buttons'
@@ -163,6 +162,7 @@ const Code = () => {
           <a href="#third">Nosotros </a>
           <a href="#fourth">Clientes </a>
           <a href="#fifth">Contacto</a>
+          <a href="#fifth">Zona Clientes</a>
           <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={linkedIn} url="https://www.linkedin.com" />
           <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={instagram} url="https://www.instagram.com/" />
           <SocialIcon className='socialIcon' bgColor="#CCC" fgColor="transparent" onClick={youtube} url="https://www.youtube.com/" />
